@@ -1,0 +1,23 @@
+{
+  "name": "qtms-ep-web",
+  "version": "1.0.0",
+  "description": "A microservice that provides web endpoints.",
+  "main": "qtms-ep-web.js",
+  "config": {
+    "port": "3000"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "multer": "^1.2.0",
+    "qtort-microservices": "^1.1.5"
+  },
+  "scripts": {
+    "exec": "${npm_node_execpath} ${npm_package_name}",
+    "watch": "node_modules/.bin/nodemon qtms-ep-web"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2"
+  }
+}
