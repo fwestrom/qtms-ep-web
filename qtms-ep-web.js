@@ -120,7 +120,7 @@ crutch(defaults, function(express, logging, microservices, options, Promise, uti
                 return response.status(504).send({ errorType: 'TimeoutError', errorText: error.toString() });
             })
             .catch(function(error) {
-                log.warn('%s %s |timeout| rk: %s, error:', request.method, request.path, rk, error);
+                log.warn('%s %s |error| rk: %s, error:', request.method, request.path, rk, error);
                 return response.status(500).send({ errorType: 'ServerError', errorText: error.toString() });
             });
     }
